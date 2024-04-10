@@ -4,6 +4,7 @@ concurrency:
 on:
   push:
     branches:
+      - main
       - master
       - beta
 jobs:
