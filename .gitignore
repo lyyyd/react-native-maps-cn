@@ -77,3 +77,6 @@ example/ios/Config.xcconfig
 
 # testing
 /coverage
+
+# release
+.env

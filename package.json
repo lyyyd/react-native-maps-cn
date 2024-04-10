@@ -1,5 +1,5 @@
 {
-  "name": "react-native-maps",
+  "name": "react-native-maps-cn",
   "description": "React Native Mapview component for iOS + Android",
   "source": "src/index",
   "main": "lib/index.js",
