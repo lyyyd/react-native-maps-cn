@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/lyyyd/react-native-maps-cn/compare/v0.0.1...v0.0.2) (2024-04-10)
+
+
+### Bug Fixes
+
+* update package.json version v0.1.0 ([ff5d0c1](https://github.com/lyyyd/react-native-maps-cn/commit/ff5d0c1ac7f60f63e4ac673e8b5eb1a0fa106354))
+
 # [1.13.0](https://github.com/react-native-maps/react-native-maps/compare/v1.12.0...v1.13.0) (2024-04-01)
 
 
