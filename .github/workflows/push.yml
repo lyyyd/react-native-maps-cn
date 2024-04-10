@@ -4,8 +4,7 @@ concurrency:
 on:
   push:
     branches:
-      - main
-      - beta
+      - master
 jobs:
   release:
     runs-on: ubuntu-latest
