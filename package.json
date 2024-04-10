@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "author": "Leland Richardson <leland.m.richardson@gmail.com>",
   "homepage": "https://github.com/lyyyd/react-native-maps-cn#readme",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "lint": "eslint . --max-warnings 0",
