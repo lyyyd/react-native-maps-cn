@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps-cn';
 
 const screen = Dimensions.get('window');
 
@@ -19,7 +19,7 @@ class LegalLabel extends React.Component<any, any> {
   };
 
   componentDidMount() {
-    this.state._legalLabelPositionY.addListener(({value}) => {
+    this.state._legalLabelPositionY.addListener(({ value }) => {
       this.setState({
         legalLabelPositionY: value,
       });
@@ -54,7 +54,7 @@ class LegalLabel extends React.Component<any, any> {
     const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
     return (
-      <View style={{...StyleSheet.absoluteFillObject}}>
+      <View style={{ ...StyleSheet.absoluteFillObject }}>
         <MapView
           provider={this.props.provider}
           style={styles.map}

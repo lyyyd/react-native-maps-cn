@@ -6,10 +6,10 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import MapView, {Marker} from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps-cn';
 import PriceMarker from './PriceMarker';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -37,11 +37,11 @@ class ViewsAsMarkers extends React.Component<any, any> {
   }
 
   increment() {
-    this.setState({amount: this.state.amount + 1});
+    this.setState({ amount: this.state.amount + 1 });
   }
 
   decrement() {
-    this.setState({amount: this.state.amount - 1});
+    this.setState({ amount: this.state.amount - 1 });
   }
 
   render() {
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     backgroundColor: 'transparent',
   },
-  ammountButton: {fontSize: 20, fontWeight: 'bold'},
+  ammountButton: { fontSize: 20, fontWeight: 'bold' },
 });
 
 export default ViewsAsMarkers;

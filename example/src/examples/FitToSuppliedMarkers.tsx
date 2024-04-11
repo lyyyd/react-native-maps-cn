@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, View, Dimensions} from 'react-native';
-import MapView, {Marker} from 'react-native-maps';
+import { StyleSheet, View, Dimensions } from 'react-native';
+import MapView, { Marker } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;

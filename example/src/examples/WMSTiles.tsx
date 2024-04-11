@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, View, Text, Dimensions} from 'react-native';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
 
-import MapView, {MAP_TYPES, WMSTile} from 'react-native-maps';
+import MapView, { MAP_TYPES, WMSTile } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 63.5;
@@ -27,11 +27,11 @@ class WMSTiles extends React.Component<any, any> {
   }
 
   toggleWMSTiles() {
-    this.setState({isWMSTilesActive: !this.state.isWMSTilesActive});
+    this.setState({ isWMSTilesActive: !this.state.isWMSTilesActive });
   }
 
   render() {
-    const {region} = this.state;
+    const { region } = this.state;
     return (
       <View style={styles.container}>
         <MapView

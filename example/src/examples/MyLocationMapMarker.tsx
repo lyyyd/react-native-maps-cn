@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import { Text } from 'react-native';
 
 export default function MyLocationMapMarker() {
   return <Text>Implement</Text>;
@@ -15,7 +15,7 @@ export default function MyLocationMapMarker() {
 //   PermissionsAndroid,
 //   Platform,
 // } from 'react-native';
-// import {Marker} from 'react-native-maps';
+// import {Marker} from 'react-native-maps-cn';
 // import isEqual from 'lodash/isEqual';
 
 // const GEOLOCATION_OPTIONS = {

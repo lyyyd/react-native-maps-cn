@@ -65,18 +65,18 @@ dependencies {
   implementation 'com.google.maps.android:android-maps-utils:3.8.2'
   implementation "androidx.work:work-runtime:2.7.1"
 }
-allprojects {
-    repositories {
-        exclusiveContent {
-           filter {
-               includeGroup "com.facebook.react"
-           }
-           forRepository {
-               maven {
-                   url "$rootDir/../node_modules/react-native/android"
-               }
-           }
-       }
+// allprojects {
+//     repositories {
+//         exclusiveContent {
+//            filter {
+//                includeGroup "com.facebook.react"
+//            }
+//            forRepository {
+//                maven {
+//                    url "$rootDir/../node_modules/react-native/android"
+//                }
+//            }
+//        }
 
-    }
-}
+//     }
+// }

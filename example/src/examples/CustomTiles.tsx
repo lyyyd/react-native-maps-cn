@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, View, Text, Dimensions} from 'react-native';
-import MapView, {MAP_TYPES, PROVIDER_DEFAULT, UrlTile} from 'react-native-maps';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import MapView, { MAP_TYPES, PROVIDER_DEFAULT, UrlTile } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -32,7 +32,7 @@ class CustomTiles extends React.Component<any, any> {
   }
 
   render() {
-    const {region} = this.state;
+    const { region } = this.state;
     return (
       <View style={styles.container}>
         <MapView

@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {StyleSheet, View, Dimensions} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, View, Dimensions } from 'react-native';
 
-import MapView, {Overlay} from 'react-native-maps';
+import MapView, { Overlay } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 35.679976;

@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps-cn';
 import flagImg from './assets/flag-blue.png';
 
 const HORIZONTAL_PADDING = 12;
@@ -18,7 +18,7 @@ class CachedMap extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      data: {...COUNTRIES},
+      data: { ...COUNTRIES },
       cache: true,
     };
   }
@@ -30,12 +30,12 @@ class CachedMap extends React.Component<any, any> {
     });
     this.setState({
       cache: !this.state.cache,
-      data: {...COUNTRIES},
+      data: { ...COUNTRIES },
     });
   }
 
   render() {
-    const {width} = Dimensions.get('window');
+    const { width } = Dimensions.get('window');
     const mapSize = width - HORIZONTAL_PADDING * 2;
     return (
       <View style={styles.container}>
@@ -50,7 +50,7 @@ class CachedMap extends React.Component<any, any> {
         </View>
         <FlatList
           data={this.state.data}
-          renderItem={({item: region}) => (
+          renderItem={({ item: region }) => (
             <View style={styles.item}>
               <Text>{region.name}</Text>
               <MapView
@@ -66,8 +66,8 @@ class CachedMap extends React.Component<any, any> {
                 loadingBackgroundColor="#eeeeee">
                 <Marker
                   coordinate={region}
-                  centerOffset={{x: -18, y: -60}}
-                  anchor={{x: 0.69, y: 1}}
+                  centerOffset={{ x: -18, y: -60 }}
+                  anchor={{ x: 0.69, y: 1 }}
                   image={flagImg}
                 />
               </MapView>

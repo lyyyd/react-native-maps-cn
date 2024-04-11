@@ -8,11 +8,11 @@ import {
   Image,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps-cn';
 import flagBlueImg from './assets/flag-blue.png';
 import flagPinkImg from './assets/flag-pink.png';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -44,7 +44,7 @@ class MarkerTypes extends React.Component<any, any> {
         if (err) {
           console.log(err);
         }
-        this.setState({mapSnapshot: data});
+        this.setState({ mapSnapshot: data });
       },
     );
   }
@@ -69,8 +69,8 @@ class MarkerTypes extends React.Component<any, any> {
               latitude: LATITUDE + SPACE,
               longitude: LONGITUDE + SPACE,
             }}
-            centerOffset={{x: -18, y: -60}}
-            anchor={{x: 0.69, y: 1}}
+            centerOffset={{ x: -18, y: -60 }}
+            anchor={{ x: 0.69, y: 1 }}
             image={flagBlueImg}
           />
           <Marker
@@ -78,8 +78,8 @@ class MarkerTypes extends React.Component<any, any> {
               latitude: LATITUDE - SPACE,
               longitude: LONGITUDE - SPACE,
             }}
-            centerOffset={{x: -42, y: -60}}
-            anchor={{x: 0.84, y: 1}}
+            centerOffset={{ x: -42, y: -60 }}
+            anchor={{ x: 0.84, y: 1 }}
             image={flagPinkImg}
           />
         </MapView>
@@ -94,9 +94,9 @@ class MarkerTypes extends React.Component<any, any> {
         {this.state.mapSnapshot && (
           <TouchableOpacity
             style={[styles.container, styles.overlay]}
-            onPress={() => this.setState({mapSnapshot: null})}>
+            onPress={() => this.setState({ mapSnapshot: null })}>
             <Image
-              source={{uri: this.state.mapSnapshot.uri}}
+              source={{ uri: this.state.mapSnapshot.uri }}
               style={styles.mapSnapshot}
             />
           </TouchableOpacity>
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
     justifyContent: 'center',
   },
-  mapSnapshot: {width: 300, height: 300},
+  mapSnapshot: { width: 300, height: 300 },
 });
 
 export default MarkerTypes;

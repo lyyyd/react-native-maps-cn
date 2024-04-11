@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, {Polyline} from 'react-native-maps';
+import MapView, { Polyline } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -35,7 +35,7 @@ class PolylineCreator extends React.Component<any, any> {
   }
 
   finish() {
-    const {polylines, editing} = this.state;
+    const { polylines, editing } = this.state;
     this.setState({
       polylines: [...polylines, editing],
       editing: null,
@@ -43,7 +43,7 @@ class PolylineCreator extends React.Component<any, any> {
   }
 
   onPanDrag(e: any) {
-    const {editing} = this.state;
+    const { editing } = this.state;
     if (!editing) {
       this.setState({
         editing: {

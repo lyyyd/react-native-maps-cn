@@ -7,10 +7,10 @@ import {
   TouchableOpacity,
   Alert,
 } from 'react-native';
-import MapView, {Marker, Callout, CalloutSubview} from 'react-native-maps';
+import MapView, { Marker, Callout, CalloutSubview } from 'react-native-maps-cn';
 import CustomCallout from './CustomCallout';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
 const LONGITUDE = -122.4324;
@@ -71,7 +71,7 @@ class Callouts extends React.Component<any, any> {
   }
 
   render() {
-    const {region, markers} = this.state;
+    const { region, markers } = this.state;
     return (
       <View style={styles.container}>
         <MapView
@@ -96,8 +96,8 @@ class Callouts extends React.Component<any, any> {
           </Marker>
           <Marker
             coordinate={markers[2].coordinate}
-            calloutOffset={{x: -8, y: 28}}
-            calloutAnchor={{x: 0.5, y: 0.4}}
+            calloutOffset={{ x: -8, y: 28 }}
+            calloutAnchor={{ x: 0.5, y: 0.4 }}
             ref={ref => {
               this.marker2 = ref;
             }}>
@@ -112,7 +112,7 @@ class Callouts extends React.Component<any, any> {
                 <Text>{`This is a custom callout bubble view ${this.state.cnt}`}</Text>
                 <CalloutSubview
                   onPress={() => {
-                    this.setState({cnt: this.state.cnt + 1}, () => {
+                    this.setState({ cnt: this.state.cnt + 1 }, () => {
                       this.marker2.redrawCallout();
                     });
                   }}

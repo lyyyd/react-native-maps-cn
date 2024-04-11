@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, Dimensions} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
-import MapView, {Polyline} from 'react-native-maps';
+import MapView, { Polyline } from 'react-native-maps-cn';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -12,12 +12,12 @@ const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
 const COORDINATES = [
-  {latitude: 37.8025259, longitude: -122.4351431},
-  {latitude: 37.7896386, longitude: -122.421646},
-  {latitude: 37.7665248, longitude: -122.4161628},
-  {latitude: 37.7734153, longitude: -122.4577787},
-  {latitude: 37.7948605, longitude: -122.4596065},
-  {latitude: 37.8025259, longitude: -122.4351431},
+  { latitude: 37.8025259, longitude: -122.4351431 },
+  { latitude: 37.7896386, longitude: -122.421646 },
+  { latitude: 37.7665248, longitude: -122.4161628 },
+  { latitude: 37.7734153, longitude: -122.4577787 },
+  { latitude: 37.7948605, longitude: -122.4596065 },
+  { latitude: 37.8025259, longitude: -122.4351431 },
 ];
 
 const COLORS = [
