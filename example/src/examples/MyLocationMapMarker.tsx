@@ -15,7 +15,7 @@ export default function MyLocationMapMarker() {
 //   PermissionsAndroid,
 //   Platform,
 // } from 'react-native';
-// import {Marker} from 'react-native-maps';
+// import {Marker} from 'react-native-maps-cn';
 // import isEqual from 'lodash/isEqual';
 
 // const GEOLOCATION_OPTIONS = {

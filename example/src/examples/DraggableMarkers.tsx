@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Dimensions} from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps-cn';
 import PriceMarker from './PriceMarker';
 
 const {width, height} = Dimensions.get('window');

@@ -1,5 +1,5 @@
 import React from 'react';
-import MapView, {Geojson} from 'react-native-maps';
+import MapView, {Geojson} from 'react-native-maps-cn';
 import {StyleSheet} from 'react-native';
 const myPlace: any = {
   type: 'FeatureCollection',

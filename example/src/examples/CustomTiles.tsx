@@ -1,6 +1,10 @@
 import React from 'react';
 import {StyleSheet, View, Text, Dimensions} from 'react-native';
-import MapView, {MAP_TYPES, PROVIDER_DEFAULT, UrlTile} from 'react-native-maps';
+import MapView, {
+  MAP_TYPES,
+  PROVIDER_DEFAULT,
+  UrlTile,
+} from 'react-native-maps-cn';
 
 const {width, height} = Dimensions.get('window');
 

@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps-cn';
 import flagBlueImg from './assets/flag-blue.png';
 import flagPinkImg from './assets/flag-pink.png';
 

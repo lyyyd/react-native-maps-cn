@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps-cn';
 
 const screen = Dimensions.get('window');
 

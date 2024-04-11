@@ -7,7 +7,7 @@ import {
   Text,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps-cn';
 
 const {width, height} = Dimensions.get('window');
 

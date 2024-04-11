@@ -6,7 +6,7 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import MapView, {MapMarker, Marker} from 'react-native-maps';
+import MapView, {MapMarker, Marker} from 'react-native-maps-cn';
 import {
   runOnJS,
   useDerivedValue,

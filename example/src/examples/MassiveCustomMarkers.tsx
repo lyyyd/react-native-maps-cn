@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps-cn';
 import flagPinkImg from './assets/flag-pink.png';
 
 const {width, height} = Dimensions.get('window');
