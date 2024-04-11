@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions, Button, Alert } from 'react-native';
+import {StyleSheet, View, Dimensions, Button, Alert} from 'react-native';
 import MapView from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 const ASPECT_RATIO = width / height;
 const LATITUDE = 1.3039991;
 const LONGITUDE = 103.8316911;
@@ -17,8 +17,8 @@ export default class IndoorMap extends React.Component<any, any> {
   }
 
   handleIndoorFocus(event: any) {
-    const { indoorBuilding } = event.nativeEvent;
-    const { defaultLevelIndex, levels } = indoorBuilding;
+    const {indoorBuilding} = event.nativeEvent;
+    const {defaultLevelIndex, levels} = indoorBuilding;
     const levelNames = levels.map((lv: any) => lv.name || '');
     const msg = `Default Level: ${defaultLevelIndex}\nLevels: ${levelNames.toString()}`;
     Alert.alert('Indoor building focused', msg);

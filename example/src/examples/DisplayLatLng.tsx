@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView, { MAP_TYPES } from 'react-native-maps-cn';
+import MapView, {MAP_TYPES} from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -33,11 +33,11 @@ class DisplayLatLng extends React.Component<any, any> {
   }
 
   onRegionChange(region: any) {
-    this.setState({ region });
+    this.setState({region});
   }
 
   jumpRandom() {
-    this.setState({ region: this.randomRegion() });
+    this.setState({region: this.randomRegion()});
   }
 
   animateRandom() {
@@ -45,15 +45,15 @@ class DisplayLatLng extends React.Component<any, any> {
   }
 
   animateRandomCoordinate() {
-    this.map.animateCamera({ center: this.randomCoordinate() });
+    this.map.animateCamera({center: this.randomCoordinate()});
   }
 
   animateToRandomBearing() {
-    this.map.animateCamera({ heading: this.getRandomFloat(-360, 360) });
+    this.map.animateCamera({heading: this.getRandomFloat(-360, 360)});
   }
 
   animateToRandomViewingAngle() {
-    this.map.animateCamera({ pitch: this.getRandomFloat(0, 90) });
+    this.map.animateCamera({pitch: this.getRandomFloat(0, 90)});
   }
 
   getRandomFloat(min: any, max: any) {
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
   buttonText: {
     textAlign: 'center',
   },
-  centeredText: { textAlign: 'center' },
+  centeredText: {textAlign: 'center'},
 });
 
 export default DisplayLatLng;

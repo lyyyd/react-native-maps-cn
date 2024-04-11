@@ -1,9 +1,14 @@
 import React from 'react';
-import { StyleSheet, View, Text, Dimensions, ScrollView } from 'react-native';
-import MapView, { Marker, Polygon, Polyline, Callout } from 'react-native-maps-cn';
+import {StyleSheet, View, Text, Dimensions, ScrollView} from 'react-native';
+import MapView, {
+  Marker,
+  Polygon,
+  Polyline,
+  Callout,
+} from 'react-native-maps-cn';
 import PriceMarker from './PriceMarker';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -18,7 +23,7 @@ class Event extends React.Component<any, any> {
   }
 
   render() {
-    const { event } = this.props;
+    const {event} = this.props;
     return (
       <View style={styles.event}>
         <Text style={styles.eventName}>{event.name}</Text>

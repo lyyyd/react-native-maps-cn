@@ -1,9 +1,13 @@
 import React from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import {StyleSheet, View, Text, Dimensions} from 'react-native';
 
-import MapView, { MAP_TYPES, PROVIDER_DEFAULT, WMSTile } from 'react-native-maps-cn';
+import MapView, {
+  MAP_TYPES,
+  PROVIDER_DEFAULT,
+  WMSTile,
+} from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 63.5;
@@ -33,7 +37,7 @@ class CustomTiles extends React.Component<any, any> {
   }
 
   render() {
-    const { region } = this.state;
+    const {region} = this.state;
     return (
       <View style={styles.container}>
         <MapView
@@ -63,7 +67,7 @@ class CustomTiles extends React.Component<any, any> {
             //tileCachePath="/data/user/0/com.airbnb.android.react.maps.example/files/wms_tiles"
             tileCacheMaxAge={20}
             opacity={1.0}
-          //offlineMode={true}
+            //offlineMode={true}
           />
         </MapView>
         <View style={styles.buttonContainer}>

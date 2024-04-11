@@ -7,9 +7,9 @@ import {
   Dimensions,
 } from 'react-native';
 
-import MapView, { Circle, Polygon, Polyline } from 'react-native-maps-cn';
+import MapView, {Circle, Polygon, Polyline} from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -75,14 +75,14 @@ class SetNativePropsOverlays extends React.Component<any, any> {
   }
 
   handleColorChange(color: any) {
-    const props = { strokeColor: color };
+    const props = {strokeColor: color};
     this.circle.setNativeProps(props);
     this.polygon.setNativeProps(props);
     this.polyline.setNativeProps(props);
   }
 
   render() {
-    const { region, circle, polygon, polyline } = this.state;
+    const {region, circle, polygon, polyline} = this.state;
     return (
       <View style={styles.container}>
         <MapView

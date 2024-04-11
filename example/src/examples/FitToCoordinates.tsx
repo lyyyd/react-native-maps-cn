@@ -7,9 +7,9 @@ import {
   Text,
 } from 'react-native';
 
-import MapView, { Marker } from 'react-native-maps-cn';
+import MapView, {Marker} from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -32,7 +32,7 @@ const MARKERS = [
   createMarker(4),
 ];
 
-const DEFAULT_PADDING = { top: 40, right: 40, bottom: 40, left: 40 };
+const DEFAULT_PADDING = {top: 40, right: 40, bottom: 40, left: 40};
 
 class FitToCoordinates extends React.Component {
   map: any;
@@ -45,7 +45,7 @@ class FitToCoordinates extends React.Component {
 
   fitPadding() {
     this.map.fitToCoordinates([MARKERS[2], MARKERS[3]], {
-      edgePadding: { top: 100, right: 100, bottom: 100, left: 100 },
+      edgePadding: {top: 100, right: 100, bottom: 100, left: 100},
       animated: true,
     });
   }

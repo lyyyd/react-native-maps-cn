@@ -6,9 +6,9 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import MapView, { Marker } from 'react-native-maps-cn';
+import MapView, {Marker} from 'react-native-maps-cn';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = 37.78825;
@@ -69,7 +69,7 @@ class DefaultMarkers extends React.Component<any, any> {
         </MapView>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
+            onPress={() => this.setState({markers: []})}
             style={styles.bubble}>
             <Text>Tap map to create a marker of random color</Text>
           </TouchableOpacity>

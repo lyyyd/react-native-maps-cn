@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, {useRef} from 'react';
 import {
   StyleSheet,
   View,
@@ -6,7 +6,7 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import MapView, { MapMarker, Marker } from 'react-native-maps-cn';
+import MapView, {MapMarker, Marker} from 'react-native-maps-cn';
 import {
   runOnJS,
   useDerivedValue,
@@ -33,15 +33,15 @@ const AnimatedMarkers = () => {
     const newLongitude =
       LONGITUDE + (Math.random() - 0.5) * (LONGITUDE_DELTA / 2);
 
-    latitude.value = withTiming(newLatitude, { duration: 1000 });
-    longitude.value = withTiming(newLongitude, { duration: 1000 });
+    latitude.value = withTiming(newLatitude, {duration: 1000});
+    longitude.value = withTiming(newLongitude, {duration: 1000});
   };
 
   // Derived value to trigger marker updates
   const updateMarkerPosition = (lat: number, lng: number) => {
     if (markerRef && markerRef.current) {
       markerRef.current.setNativeProps({
-        coordinate: { latitude: lat, longitude: lng },
+        coordinate: {latitude: lat, longitude: lng},
       });
     }
   };

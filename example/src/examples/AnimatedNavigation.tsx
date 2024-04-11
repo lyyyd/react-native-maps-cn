@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 
-import MapView, { Marker } from 'react-native-maps-cn';
+import MapView, {Marker} from 'react-native-maps-cn';
 // @ts-ignore
 import carImage from './assets/car.png';
 
@@ -12,7 +12,7 @@ export default class NavigationMap extends Component<any, any> {
     super(props);
     this.state = {
       prevPos: null,
-      curPos: { latitude: 37.420814, longitude: -122.081949 },
+      curPos: {latitude: 37.420814, longitude: -122.081949},
       curAng: 45,
       latitudeDelta: 0.0922,
       longitudeDelta: 0.0421,
@@ -27,7 +27,7 @@ export default class NavigationMap extends Component<any, any> {
     const longitude = this.state.curPos.longitude + lonOffset;
     this.setState({
       prevPos: this.state.curPos,
-      curPos: { latitude, longitude },
+      curPos: {latitude, longitude},
     });
     this.updateMap();
   }
@@ -42,9 +42,9 @@ export default class NavigationMap extends Component<any, any> {
   }
 
   updateMap() {
-    const { curPos, prevPos, curAng } = this.state;
+    const {curPos, prevPos, curAng} = this.state;
     const curRot = this.getRotation(prevPos, curPos);
-    this.map.animateCamera({ heading: curRot, center: curPos, pitch: curAng });
+    this.map.animateCamera({heading: curRot, center: curPos, pitch: curAng});
   }
 
   render() {
@@ -61,7 +61,7 @@ export default class NavigationMap extends Component<any, any> {
           }}>
           <Marker
             coordinate={this.state.curPos}
-            anchor={{ x: 0.5, y: 0.5 }}
+            anchor={{x: 0.5, y: 0.5}}
             image={carImage}
           />
         </MapView>
