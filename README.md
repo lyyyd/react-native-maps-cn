@@ -2,6 +2,12 @@
 
 React Native Map components for iOS + Android
 
+Introducing react-native-maps-cn, your all-in-one solution for integrating popular maps services seamlessly into your React Native projects, tailored specifically for developers in mainland China.
+
+With react-native-maps-cn, you gain effortless access to leading map providers such as Amap, Baidu Maps, Tencent Maps, and even Huawei Petal Maps, empowering you to enhance your applications with dynamic and interactive mapping features on both iOS and Android platforms.
+
+Whether you're navigating bustling city streets or exploring scenic landscapes, react-native-maps-cn delivers unparalleled flexibility and performance, allowing you to create captivating user experiences with ease. Elevate your app's mapping capabilities today with react-native-maps-cn!
+
 ## Contributing
 
 This project is being maintained by a small group of people, and any help with issues and pull requests are always appreciated. If you are able and willing to contribute, please read the [guidelines](./CONTRIBUTING.md).
