@@ -1,4 +1,4 @@
-# react-native-maps [![npm version](https://img.shields.io/npm/v/react-native-maps.svg?style=flat)](https://www.npmjs.com/package/react-native-maps)
+# react-native-maps-cn [![npm version](https://img.shields.io/npm/v/react-native-maps.svg?style=flat)](https://www.npmjs.com/package/react-native-maps)
 
 React Native Map components for iOS + Android
 
@@ -20,7 +20,7 @@ See [Setup Instructions for the Included Example Project](docs/examples-setup.md
 
 ## Compatibility
 
-`react-native-maps` requires `react-native >= 0.64.3`.
+`react-native-maps-cn` requires `react-native >= 0.64.3`.
 
 ## Component API
 
@@ -45,13 +45,13 @@ See [Setup Instructions for the Included Example Project](docs/examples-setup.md
 ## General Usage
 
 ```js
-import MapView from 'react-native-maps';
+import MapView from 'react-native-maps-cn';
 ```
 
 or
 
 ```js
-var MapView = require('react-native-maps');
+var MapView = require('react-native-maps-cn');
 ```
 
 This MapView component is built so that features on the map (such as Markers, Polygons, etc.) are
@@ -104,7 +104,7 @@ render() {
 ### Rendering a list of markers on a map
 
 ```jsx
-import {Marker} from 'react-native-maps';
+import {Marker} from 'react-native-maps-cn';
 
 <MapView region={this.state.region} onRegionChange={this.onRegionChange}>
   {this.state.markers.map((marker, index) => (
