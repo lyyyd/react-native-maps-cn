@@ -146,7 +146,7 @@ Note: This has performance implications, if you wish for a simpler solution go w
 ### Rendering a custom Marker with a custom Callout
 
 ```jsx
-import {Callout} from 'react-native-maps';
+import {Callout} from 'react-native-maps-cn';
 
 <Marker coordinate={marker.latlng}>
   <MyCustomMarkerView {...marker} />
@@ -172,7 +172,7 @@ import {Callout} from 'react-native-maps';
 #### Tile Overlay using tile server
 
 ```jsx
-import {UrlTile} from 'react-native-maps';
+import {UrlTile} from 'react-native-maps-cn';
 
 <MapView region={this.state.region} onRegionChange={this.onRegionChange}>
   <UrlTile
@@ -208,7 +208,7 @@ For IOS: configure [App Transport Security](https://developer.apple.com/library/
 Tiles can be stored locally within device using xyz tiling scheme and displayed as tile overlay as well. This is usefull especially for offline map usage when tiles are available for selected map region within device storage.
 
 ```jsx
-import {LocalTile} from 'react-native-maps';
+import {LocalTile} from 'react-native-maps-cn';
 
 <MapView region={this.state.region} onRegionChange={this.onRegionChange}>
   <LocalTile
@@ -274,7 +274,7 @@ render() {
 For iOS, in addition to providing the `mapStyle` you will need to do the following
 
 ```jsx
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps-cn'
 
 // ...
 
@@ -403,7 +403,7 @@ Poi are clickable, you can catch the event to get its information (usually to ge
 The MapView can accept an `AnimatedRegion` value as its `region` prop. This allows you to utilize the Animated API to control the map's center and zoom.
 
 ```jsx
-import MapView, { AnimatedRegion, Animated } from 'react-native-maps';
+import MapView, { AnimatedRegion, Animated } from 'react-native-maps-cn';
 
 getInitialState() {
   return {
@@ -435,7 +435,7 @@ render() {
 Markers can also accept an `AnimatedRegion` value as a coordinate.
 
 ```jsx
-import Mapview, { AnimatedRegion, MarkerAnimated } from 'react-native-maps';
+import Mapview, { AnimatedRegion, MarkerAnimated } from 'react-native-maps-cn';
 
 getInitialState() {
   return {
@@ -482,7 +482,7 @@ render() {
 ### Take Snapshot of map
 
 ```jsx
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps-cn';
 
 getInitialState() {
   return {
@@ -540,7 +540,7 @@ Pass an array of coordinates to focus a map region on said coordinates.
 
 #### My map is blank
 
-- Make sure that you have [properly installed](docs/installation.md) react-native-maps.
+- Make sure that you have [properly installed](docs/installation.md) react-native-maps-cn.
 - Check in the logs if there is more informations about the issue.
 - Try setting the style of the MapView to an absolute position with top, left, right and bottom values set.
 - Make sure you have enabled Google Maps API in [Google developer console](https://console.developers.google.com/apis/library)
